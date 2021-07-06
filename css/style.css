@@ -1,0 +1,145 @@
+body {
+	background-color: #f2f2f2;
+	font-size: 0.94rem;
+}
+
+main {
+	width: 90%;
+	margin: 2rem auto;
+}
+
+img {
+	margin: 0 2rem;
+}
+
+section {
+	padding: 8rem 0;
+}
+
+h2 {
+	color: #f2f2f2;
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1rem 2rem;
+}
+
+p {
+	color: #ffffffbf;
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: justify;
+	line-height: 2;
+	margin: 0 2rem;
+}
+
+.sedans {
+	background-color: #e38826;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.suvs {
+	background-color: #006970;
+}
+
+.luxury {
+	background-color: #004241;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.button {
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	font-size: 1.2rem;
+	margin: 1rem 0rem 0rem 3rem;
+	padding: 1rem 3rem;
+	position: absolute;
+	text-decoration: none;
+}
+
+.button.one,
+.button.one:visited {
+	color: #e38826;
+}
+
+.button.two,
+.button.two:visited {
+	color: #006970;
+}
+.button.three,
+.button.three:visited {
+	color: #004241;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1220px) {
+	.container {
+		display: flex;
+		width: 100%;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		justify-content: flex-end;
+		height: 90%;
+		width: 90%;
+	}
+
+	p {
+		font-size: 1.1rem;
+		margin: 0 0 6rem 2rem;
+		width: 80%;
+	}
+
+	h2 {
+		position: relative;
+		bottom: 2rem;
+	}
+
+	img {
+		position: relative;
+		bottom: 4rem;
+		margin: 0 2rem;
+	}
+
+	.sedans {
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 0;
+	}
+
+	.luxury {
+		background-color: #004241;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.button {
+		position: static;
+		margin: 0rem 0rem 0rem 3rem;
+	}
+
+	.button:hover {
+		background-color: #f2f2f200;
+		border: 1px solid #f2f2f2;
+		padding: calc(1rem - 1px) 3rem;
+		color: #f2f2f2;
+	}
+
+	.button.one:visited:hover,
+	.button.two:visited:hover,
+	.button.three:visited:hover {
+		color: #f2f2f2;
+	}
+}
